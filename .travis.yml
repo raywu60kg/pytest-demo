@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - "2.7"
+  - "3.5"
+  - "3.6"
+  - "3.7"
+before_install:
+  - echo "before_install"
+
+install:
+  - echo "install"
+  - 
+before_script:
+  - echo "before_script"
+
+script:
+  - echo "script"
