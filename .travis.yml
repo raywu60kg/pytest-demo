@@ -4,15 +4,11 @@ python:
   - "3.5"
   - "3.6"
   - "3.7"
-before_install:
-  - echo "before_install"
 
-install:
-  - echo "install"
-  - 
-before_script:
+  before_script:
   - echo "before_script"
 
 script:
   - pip install pipenv
   - tox
+  - tox -e flake8-py3

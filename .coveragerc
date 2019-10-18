@@ -1,8 +1,5 @@
 [run]
+include = ./pytest_demo/*
 omit = 
-    */setup.py
-    */test.py
-source = main.py
-
-[paths]
-source = main.py
+    *tests*
+    *__init__*
