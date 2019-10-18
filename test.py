@@ -1,5 +1,6 @@
-import pytest
+from main import main
 
 
-def test_demo():
-    assert 1 == 1
+def test_main():
+    return_from_main = main()
+    assert return_from_main == 1

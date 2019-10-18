@@ -1,7 +1,6 @@
 language: python
 
 python:
-  - "2.7"
   - "3.5"
   - "3.6"
   - "3.7"
@@ -15,4 +14,5 @@ before_script:
   - echo "before_script"
 
 script:
-  - echo "script"
+  - pip install pipenv
+  - tox
