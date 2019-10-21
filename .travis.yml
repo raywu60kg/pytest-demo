@@ -10,12 +10,12 @@ before_install:
 
 install:
   - echo "install"
-  - 
+  - pip install pipenv
+  - pipenv install --dev
+
 before_script:
   - echo "before_script"
 
 script:
-  - pip install pipenv
-  - pipenv install --dev
   - tox
   - tox -e flake8-py3
