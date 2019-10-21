@@ -16,5 +16,6 @@ before_script:
 
 script:
   - pip install pipenv
+  - pipenv install --dev
   - tox
   - tox -e flake8-py3
